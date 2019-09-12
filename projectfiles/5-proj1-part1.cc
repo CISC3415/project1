@@ -20,7 +20,7 @@
  *  ERROR MEASUREMENTS
  *  Based on an (x, y) distance between the start and end locations
  *  Round 1: ( 0.0, -2.0)
- *  Round 2: ( 0.0,  3.0)
+ *  Round 2: ( 0.0, +3.0)
  *  Round 3: (-2.0, -4.0)
  *  Round 4: (-2.0, -1.0)
  *  Round 5: (-2.0, -1.0)

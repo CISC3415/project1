@@ -29,7 +29,7 @@
  *  Round 2: ( 0.0,  0.0)
  *  Round 3: (-2.5, -2.5)
  *  Round 4: ( 0.0,  0.0)
- *  Round 5: (-2.0, -1.0)
+ *  Round 5: (-2.0,  0.0)
  */
 
 #include <iostream>
