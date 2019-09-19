@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
     // Sets speed, estimated based on 3 feet per (X) seconds
     // Sets turnrate, estimated based on 90 degrees per (Y) seconds
     speed = 0.2;
-    turnrate = 0.2;                   // A position value instructs the
+    turnrate = 0.2;                   // A positive value instructs the
                                       // robot to rotate counter-clockwise
 
     // Sets physical movement to forward motion at rate of (speed)
