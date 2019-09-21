@@ -3,33 +3,37 @@
  *  Project 1 - Part 2
  *  Date: 10th September 2019
  *
+ ** Group Members *************************************************************
+ *    
+ *  Benjamin Yi
+ *  Emmanuel Desdunes
+ *  Montasir Omi
+ *  Shah Zada
  *
- *  GROUP 5 - Members
- *    Benjamin Yi
- *    Emmanuel Desdunes
- *    Montasir Omi
- *    Shah Zada
+ ** Description ***************************************************************
+ * 
+ *  Similar to part 1 of this project, this program instead negates the
+ *  turnrate causing the robot to travel on a "clockwise square". Again, we
+ *  measure the errors caused by dead reckoning.
  *
+ ** Error Measurements ********************************************************
  *
- *  DESCRIPTION
- *  Instructs a robot, specifically a Roomba, to move forward for
- *  for an estimated 3 feet, and rotate for an estimated -90 degrees
- *  for four iterations, moving along a 3-feet square.
- *
- *
- *  NOTE
- *  A simple adjustment to 5-proj1-part1.cc, which instructs the roomba
- *  to move along a square path, turning right at each corner.
- *  This adjuments instructs the robot to turn LEFT at each corner instead.
- *
- *
- *  ERROR MEASUREMENTS
  *  Based on an (x, y) distance between the start and end locations
  *  Round 1: ( 0.0,  0.0)
  *  Round 2: ( 0.0,  0.0)
- *  Round 3: (-2.5, -2.5)
+ *  Round 3: (-2.0, -2.0)
  *  Round 4: ( 0.0,  0.0)
  *  Round 5: (-2.0,  0.0)
+ * 
+ ** Results *******************************************************************
+ * 
+ *  The results of this program was very different comparent to the first part.
+ *  For most rounds, the robot landed with a very small error, which was
+ *  recorded as (dx = 0.0, dy = 0.0). Since the value of the turnrate was only
+ *  negated and not changed, the result should have shown a consistent dx of 
+ *  -2.0 caused by a turn greater than 90 degrees. We believe was because the
+ *  robot may not have the same left turnrate and a right turnrate. 
+ * 
  */
 
 #include <iostream>

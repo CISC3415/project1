@@ -3,27 +3,44 @@
  *  Project 1 - Part 1
  *  Date: 10th September 2019
  *
+ ** Group Members *************************************************************
+ *    
+ *  Benjamin Yi
+ *  Emmanuel Desdunes
+ *  Montasir Omi
+ *  Shah Zada
  *
- *  GROUP 5 - Members
- *    Benjamin Yi
- *    Emmanuel Desdunes
- *    Montasir Omi
- *    Shah Zada
+ ** Description ***************************************************************
+ * 
+ *  The purpose of this project is to test errors in movement caused by dead 
+ *  reckoning. The program instructs a robot, specifically a Roomba, to move
+ *  forward for an estimated 3 feet, and rotate for an estimated 90 degrees for
+ *  four iterations, moving along a 3-foot square. The program is run five
+ *  times, and the dx and dy of the start and end locations are recorded each
+ *  round. 
  *
+ ** Error Measurements ********************************************************
  *
- *  DESCRIPTION
- *  Instructs a robot, specifically a Roomba, to move forward for
- *  for an estimated 3 feet, and rotate for an estimated 90 degrees
- *  for four iterations, moving along a 3-feet square.
- *
- *
- *  ERROR MEASUREMENTS
  *  Based on an (x, y) distance between the start and end locations
  *  Round 1: ( 0.0, -2.0)
  *  Round 2: ( 0.0, +3.0)
  *  Round 3: (-2.0, -4.0)
  *  Round 4: (-2.0, -1.0)
  *  Round 5: (-2.0, -1.0)
+ * 
+ ** Results *******************************************************************
+ * 
+ *  On average, the start and end locations differ by about (-2.0, -1.0) in the
+ *  y direction . This was the average dx and dy even through the additional
+ *  test rounds. Since this difference seemed consistent, it is probable that
+ *  there is an error with the turnrate value in the program. A consistent
+ *  (-)dx is probably the result of the robot turning a bit beyond 90 degrees,
+ *  which can be observed by increasing the anglesof a square by a small amount,
+ *  assuming it is a "counter-clockwise square".Any inconsistencies with this
+ *  result was most likely due to dead reckoning, since each step of the
+ *  program may have caused the robot to travel and turn at a rate inconsistent
+ *  to a perfect simulation.
+ * 
  */
 
 #include <iostream>
